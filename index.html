@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script src="index.js"></script>
+  <title>Stock</title>
+</head>
+<body>
+  <div class="app">
+    <div class="container">
+      <h1>Stock Profit/Loss</h1>
+      <p>This app will tell you how much profit/loss you made on your trade</p>
+
+      <div class="main">
+        Stock:<select name="stock-name" id="stock-name">
+          <option value="TATAMOTORS">Tata Motors</option>
+          <option value="RELIANCE">Reliance Industries</option>
+          <option value="TITAN">Titan Industries</option>
+          <option value="TCS">Tata Consultancy Limited</option>
+          <option value="INFY">Infosys Limited</option>
+        </select>
+        Quantity:<input type="number" class="quantity" /><br>
+        Buy Date:<input type="date" class="buy-date">
+        Sell Date:<input type="date" class="sell-date" /><br>
+        <button class="check" onclick="check()">Check</button>
+      </div>
+      <div class="result"></div>
+    </div>
+    <div class="footer">
+      <div class="footer-icon">
+        <a href="https://twitter.com/rushikesh3299" class="fa fa-twitter"></a>
+        <a href="https://github.com/rushikesh3299" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/rushikesh-chougule-621854192/" class="fa fa-linkedin"></a>
+      </div>
+      <div class="footer-info">
+        <a href="#">Made with ❤ by Rushikesh</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
