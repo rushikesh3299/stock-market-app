@@ -1,21 +1,30 @@
 *{
-    margin-top: 0;
+    margin: 0;
 }
 
 .app{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 70vh;
-    background-color:aqua;
+    position: relative;
     margin: auto;
     text-align: center;
 }
 
+.app img{
+    width: 100%;
+    opacity: 0.5;
+}
+
 .container{
-    padding: 1rem;
+    position: absolute;
+    padding-top: 1rem;
+    background-color:aqua;
+    width: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container h1{
+    padding: .5rem;
 }
 
 select{
@@ -48,10 +57,10 @@ button{
 }
 
 .footer{
-    position: absolute;
+    margin: 0;
     bottom: 0;
     width: 100%;
-    background-color: wheat;
+    background-color: rgb(98, 230, 230);
     padding: 1rem 0;
   }
   
@@ -66,33 +75,27 @@ button{
     padding: 1rem;
     text-decoration: none;
   }
-
-@media only screen and (max-width: 845px) {
+ 
+  @media only screen and (max-width: 769px) {
     .app{
-        width: 100%;
-        height: 100vh;
+        position: static;
     }
 
-    input, select{
-        display: block;
-        margin: 0.5rem auto;
+    .app img{
+        display: none;
     }
-
     .container{
+        height: 100vh;
         text-align: center;
+        width: 100%;
     }
 
-    .quantity{
-        width: 20%;
+    select, input{
+        display: block;
+        margin: auto;
     }
 
-    button{
-        padding: 0.2rem 1rem;
-        margin: 0;
-    }
-
-    input{
-        margin-bottom: .1rem;
-        margin-top: .1rem;
+    .footer{
+        margin-top: auto;
     }
   }
